@@ -1,0 +1,3 @@
+class PrintBandit
+
+end

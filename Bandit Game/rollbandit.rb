@@ -1,0 +1,3 @@
+class RollBandit
+
+end
