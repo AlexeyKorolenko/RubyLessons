@@ -9,12 +9,13 @@ puts 'Гипо́теза Ко́ллатца (3n+1 диле́мма, сираку
 
 puts 'Введите число'
 number = gets.chomp.to_i
-while number != 1 do
-  if number.odd?
-    number = (number * 3) + 1
-    puts number
-  else
-    number = number / 2
-    puts number
-  end
+n = 0
+while number != 1
+  n += 1
+  number = if number.odd?
+             (number * 3) + 1
+           else
+             number / 2
+           end
+  puts "#{n}. #{number} "
 end
